@@ -10,12 +10,64 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="apPizza_Watch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Label" id="AMm-QE-uRR"/>
-                        <imageView height="125" alignment="left" image="pizza" contentMode="scaleAspectFit" id="UWc-T3-qLj"/>
+                        <label alignment="left" text="Bienvenidos" id="AMm-QE-uRR"/>
+                        <button width="1" height="127.5" alignment="left" title="Comenzar" backgroundImage="pizza" id="8VV-i5-52B">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="n8I-hn-aqr" kind="modal" id="XNE-W4-t9v"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="333"/>
+            <point key="canvasLocation" x="-469" y="348"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="I0S-ws-AY3">
+            <objects>
+                <controller id="n8I-hn-aqr">
+                    <items>
+                        <label width="136" alignment="left" text="Seleccion de tamaño" minimumScaleFactor="0.0" id="dGD-oY-BTM"/>
+                        <picker height="90" alignment="left" id="bLZ-pk-wbO"/>
+                        <button width="1" alignment="left" title="Siguiente" id="Qs0-5P-N0v">
+                            <connections>
+                                <segue destination="vPR-3p-fyn" kind="push" id="YqH-bw-h2T"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-469" y="676"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="6pE-SL-xH8">
+            <objects>
+                <controller id="vPR-3p-fyn">
+                    <items>
+                        <label width="136" alignment="left" text="Tipo de masa" minimumScaleFactor="0.0" id="pjh-um-WXH"/>
+                        <picker height="90" alignment="left" id="vbe-6X-262"/>
+                        <button width="1" alignment="left" title="Siguiente" id="nfv-Fp-91j">
+                            <connections>
+                                <segue destination="T8R-QJ-acA" kind="push" id="8bb-fX-Nhx"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-224" y="676"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="uUH-rr-KmF">
+            <objects>
+                <controller id="T8R-QJ-acA">
+                    <items>
+                        <label width="136" alignment="left" text="Tipo de queso" minimumScaleFactor="0.0" id="MFE-lz-sGy"/>
+                        <picker height="90" alignment="left" id="FJh-r7-QEA"/>
+                        <button width="1" alignment="left" title="Siguiente" id="o96-6N-SCZ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="36" y="676"/>
         </scene>
     </scenes>
 </document>
