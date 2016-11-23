@@ -20,24 +20,32 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-469" y="348"/>
+            <point key="canvasLocation" x="-466" y="49"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Tamaño Interface Controller-->
         <scene sceneID="I0S-ws-AY3">
             <objects>
-                <controller id="n8I-hn-aqr">
+                <controller id="n8I-hn-aqr" customClass="APTamañoInterfaceController" customModule="apPizza_Watch">
                     <items>
                         <label width="136" alignment="left" text="Seleccion de tamaño" minimumScaleFactor="0.0" id="dGD-oY-BTM"/>
-                        <picker height="90" alignment="left" id="bLZ-pk-wbO"/>
+                        <picker height="90" alignment="left" id="bLZ-pk-wbO">
+                            <connections>
+                                <action selector="pickerSelectedItemChanged:" destination="n8I-hn-aqr" id="f66-mX-9XT"/>
+                            </connections>
+                        </picker>
                         <button width="1" alignment="left" title="Siguiente" id="Qs0-5P-N0v">
                             <connections>
                                 <segue destination="vPR-3p-fyn" kind="push" id="YqH-bw-h2T"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="confirmButton" destination="Qs0-5P-N0v" id="7Da-hU-6u4"/>
+                        <outlet property="sizePicker" destination="bLZ-pk-wbO" id="aZT-Jx-irk"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-469" y="676"/>
+            <point key="canvasLocation" x="-466" y="508"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="6pE-SL-xH8">
@@ -54,7 +62,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-224" y="676"/>
+            <point key="canvasLocation" x="-221" y="508"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="uUH-rr-KmF">
@@ -63,11 +71,38 @@
                     <items>
                         <label width="136" alignment="left" text="Tipo de queso" minimumScaleFactor="0.0" id="MFE-lz-sGy"/>
                         <picker height="90" alignment="left" id="FJh-r7-QEA"/>
-                        <button width="1" alignment="left" title="Siguiente" id="o96-6N-SCZ"/>
+                        <button width="1" alignment="left" title="Siguiente" id="o96-6N-SCZ">
+                            <connections>
+                                <segue destination="MYx-hF-xcU" kind="push" id="11x-yR-ueS"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="36" y="676"/>
+            <point key="canvasLocation" x="39" y="508"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="4Bm-Yk-OkX">
+            <objects>
+                <controller id="MYx-hF-xcU">
+                    <items>
+                        <label width="136" alignment="left" text="Ingredientes" minimumScaleFactor="0.0" id="lXn-Xg-dTg"/>
+                        <group width="1" height="86" alignment="left" id="Qtm-wx-jd3">
+                            <items>
+                                <table alignment="left" id="t91-XN-ytg">
+                                    <items>
+                                        <tableRow id="KqA-j1-znX">
+                                            <group key="rootItem" width="1" height="86.5" alignment="left" id="gDS-Dx-TxS"/>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Siguiente" id="a6O-8J-Hcn"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="303" y="508"/>
         </scene>
     </scenes>
 </document>

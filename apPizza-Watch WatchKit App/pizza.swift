@@ -23,3 +23,22 @@ class Pizza {
         self.ingredientes = ingredientes
     }
 }
+
+enum tamanos: String {
+    case Pequeña = "Pequeña"
+    case Mediana = "Mediana"
+    case Grande = "Grande"
+}
+
+enum masa: String {
+    case Delgada = "Delgada"
+    case Crujiente = "Crujiente"
+    case Gruesa = "Gruesa"
+}
+
+enum queso: String {
+    case Mozzarella = "Mozzarella"
+    case Cheddar = "Cheddar"
+    case Parmesano = "Parmesano"
+    case SinQueso = "Sin Queso"
+}
