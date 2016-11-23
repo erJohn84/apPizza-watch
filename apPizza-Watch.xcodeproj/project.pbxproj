@@ -20,6 +20,7 @@
 		9B6403531DE45326009E6CFE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6403521DE45326009E6CFE /* ExtensionDelegate.swift */; };
 		9B6403551DE45326009E6CFE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6403541DE45326009E6CFE /* NotificationController.swift */; };
 		9B6403571DE45326009E6CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6403561DE45326009E6CFE /* Assets.xcassets */; };
+		9BF157451DE5DAD300FF33B0 /* pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF157441DE5DAD300FF33B0 /* pizza.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		9B6403541DE45326009E6CFE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		9B6403561DE45326009E6CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6403581DE45326009E6CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF157441DE5DAD300FF33B0 /* pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pizza.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				9B64033F1DE45326009E6CFE /* Interface.storyboard */,
+				9BF157441DE5DAD300FF33B0 /* pizza.swift */,
 				9B6403421DE45326009E6CFE /* Assets.xcassets */,
 				9B6403441DE45326009E6CFE /* Info.plist */,
 			);
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF157451DE5DAD300FF33B0 /* pizza.swift in Sources */,
 				9B64032E1DE45325009E6CFE /* ViewController.swift in Sources */,
 				9B64032C1DE45325009E6CFE /* AppDelegate.swift in Sources */,
 			);
@@ -543,6 +547,7 @@
 				9B64035D1DE45326009E6CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B64035F1DE45326009E6CFE /* Build configuration list for PBXNativeTarget "apPizza-Watch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +556,7 @@
 				9B6403611DE45326009E6CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B6403631DE45326009E6CFE /* Build configuration list for PBXNativeTarget "apPizza-Watch" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +565,7 @@
 				9B6403651DE45326009E6CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
