@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "APTaman&#x303;oInterfaceController.pickerSelectedItemChanged(Int) -&gt; ():APTaman&#x303;oInterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(tamanos[value])">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

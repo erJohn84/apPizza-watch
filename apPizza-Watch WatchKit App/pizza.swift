@@ -24,12 +24,6 @@ class Pizza {
     }
 }
 
-enum tamanos: String {
-    case Pequeña = "Pequeña"
-    case Mediana = "Mediana"
-    case Grande = "Grande"
-}
-
 enum masa: String {
     case Delgada = "Delgada"
     case Crujiente = "Crujiente"

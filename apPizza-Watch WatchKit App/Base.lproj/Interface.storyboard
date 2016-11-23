@@ -25,17 +25,17 @@
         <!--Tamaño Interface Controller-->
         <scene sceneID="I0S-ws-AY3">
             <objects>
-                <controller id="n8I-hn-aqr" customClass="APTamañoInterfaceController" customModule="apPizza_Watch">
+                <controller id="n8I-hn-aqr" customClass="APTamañoInterfaceController" customModule="apPizza_Watch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Seleccion de tamaño" minimumScaleFactor="0.0" id="dGD-oY-BTM"/>
                         <picker height="90" alignment="left" id="bLZ-pk-wbO">
                             <connections>
-                                <action selector="pickerSelectedItemChanged:" destination="n8I-hn-aqr" id="f66-mX-9XT"/>
+                                <action selector="pickerSelectedItemChanged:" destination="n8I-hn-aqr" id="13r-ba-Xrh"/>
                             </connections>
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="Qs0-5P-N0v">
                             <connections>
-                                <segue destination="vPR-3p-fyn" kind="push" id="YqH-bw-h2T"/>
+                                <segue destination="vPR-3p-fyn" kind="modal" id="c6V-Oz-1iy"/>
                             </connections>
                         </button>
                     </items>

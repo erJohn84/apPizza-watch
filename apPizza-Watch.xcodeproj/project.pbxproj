@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1304EF1DE5F600004ABD7A /* APTamañoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */; };
+		9B1304F01DE5F602004ABD7A /* pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF157441DE5DAD300FF33B0 /* pizza.swift */; };
 		9B64032C1DE45325009E6CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64032B1DE45325009E6CFE /* AppDelegate.swift */; };
 		9B64032E1DE45325009E6CFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B64032D1DE45325009E6CFE /* ViewController.swift */; };
 		9B6403311DE45325009E6CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B64032F1DE45325009E6CFE /* Main.storyboard */; };
@@ -83,8 +85,8 @@
 		9B6403541DE45326009E6CFE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		9B6403561DE45326009E6CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6403581DE45326009E6CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BF157441DE5DAD300FF33B0 /* pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pizza.swift; sourceTree = "<group>"; };
-		9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APTamañoInterfaceController.swift"; sourceTree = "<group>"; };
+		9BF157441DE5DAD300FF33B0 /* pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = pizza.swift; path = "apPizza-Watch WatchKit App/pizza.swift"; sourceTree = SOURCE_ROOT; };
+		9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "APTamañoInterfaceController.swift"; path = "../apPizza-Watch WatchKit App/APTamañoInterfaceController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				9B64033F1DE45326009E6CFE /* Interface.storyboard */,
-				9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */,
-				9BF157441DE5DAD300FF33B0 /* pizza.swift */,
 				9B6403421DE45326009E6CFE /* Assets.xcassets */,
 				9B6403441DE45326009E6CFE /* Info.plist */,
 			);
@@ -153,6 +153,8 @@
 		9B64034D1DE45326009E6CFE /* apPizza-Watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9BF157441DE5DAD300FF33B0 /* pizza.swift */,
+				9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */,
 				9B6403501DE45326009E6CFE /* InterfaceController.swift */,
 				9B6403521DE45326009E6CFE /* ExtensionDelegate.swift */,
 				9B6403541DE45326009E6CFE /* NotificationController.swift */,
@@ -314,6 +316,8 @@
 			files = (
 				9B6403551DE45326009E6CFE /* NotificationController.swift in Sources */,
 				9B6403531DE45326009E6CFE /* ExtensionDelegate.swift in Sources */,
+				9B1304EF1DE5F600004ABD7A /* APTamañoInterfaceController.swift in Sources */,
+				9B1304F01DE5F602004ABD7A /* pizza.swift in Sources */,
 				9B6403511DE45326009E6CFE /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

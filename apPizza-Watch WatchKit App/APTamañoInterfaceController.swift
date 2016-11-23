@@ -12,13 +12,10 @@ import Foundation
 class APTamañoInterfaceController: WKInterfaceController {
     
     @IBOutlet var sizePicker: WKInterfacePicker!
-    @IBAction func pickerSelectedItemChanged(value: Int) {
-    }
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
-    let pickerData = ["Pequeña","Mediana","Grande"]
-    var value = "pequeña"
     var pizza = Pizza?()
+    var tamanos: [(String)] = ["Pequeña", "Mediana", "Grande"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -26,13 +23,23 @@ class APTamañoInterfaceController: WKInterfaceController {
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        let pickerItems: [WKPickerItem] = tamanos.map {
+            let pickerItem = WKPickerItem()
+            pickerItem.title = $0
+            pickerItem.caption = $0
+            return pickerItem
+        }
+        sizePicker.setItems(pickerItems)
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+    }
+    
+    @IBAction func pickerSelectedItemChanged(value: Int) {
+        pizza?.tamano = String(tamanos[value])
     }
 
 }
