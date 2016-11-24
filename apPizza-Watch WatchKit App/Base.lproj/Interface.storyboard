@@ -97,25 +97,25 @@
             </objects>
             <point key="canvasLocation" x="39" y="508"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Ingredientes Interface Controller-->
         <scene sceneID="4Bm-Yk-OkX">
             <objects>
-                <controller id="MYx-hF-xcU">
+                <controller id="MYx-hF-xcU" customClass="APIngredientesInterfaceController" customModule="apPizza_Watch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Ingredientes" minimumScaleFactor="0.0" id="lXn-Xg-dTg"/>
-                        <group width="1" height="86" alignment="left" id="Qtm-wx-jd3">
+                        <table alignment="left" id="zUa-ue-ig7">
                             <items>
-                                <table alignment="left" id="t91-XN-ytg">
-                                    <items>
-                                        <tableRow id="KqA-j1-znX">
-                                            <group key="rootItem" width="1" height="86.5" alignment="left" id="gDS-Dx-TxS"/>
-                                        </tableRow>
-                                    </items>
-                                </table>
+                                <tableRow id="ZZo-NQ-2Ob">
+                                    <group key="rootItem" width="1" alignment="left" id="rMr-zo-8gM"/>
+                                </tableRow>
                             </items>
-                        </group>
+                        </table>
                         <button width="1" alignment="left" title="Siguiente" id="a6O-8J-Hcn"/>
                     </items>
+                    <connections>
+                        <outlet property="confirmButton" destination="a6O-8J-Hcn" id="Pz5-v9-VYJ"/>
+                        <outlet property="ingredientes" destination="zUa-ue-ig7" id="M5N-B1-gD2"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="303" y="508"/>
