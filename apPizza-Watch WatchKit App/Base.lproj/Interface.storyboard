@@ -75,16 +75,24 @@
         <!--tamano-->
         <scene sceneID="uUH-rr-KmF">
             <objects>
-                <controller identifier="tamano" id="T8R-QJ-acA">
+                <controller identifier="tamano" id="T8R-QJ-acA" customClass="APQuesoInterfaceController" customModule="apPizza_Watch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Tipo de queso" minimumScaleFactor="0.0" id="MFE-lz-sGy"/>
-                        <picker height="90" alignment="left" id="FJh-r7-QEA"/>
+                        <picker height="90" alignment="left" id="FJh-r7-QEA">
+                            <connections>
+                                <action selector="pickerSelectedItemChanged:" destination="T8R-QJ-acA" id="ynZ-rw-asT"/>
+                            </connections>
+                        </picker>
                         <button width="1" alignment="left" title="Siguiente" id="o96-6N-SCZ">
                             <connections>
-                                <segue destination="MYx-hF-xcU" kind="push" id="11x-yR-ueS"/>
+                                <segue destination="MYx-hF-xcU" kind="push" identifier="queso" id="11x-yR-ueS"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="confirmButton" destination="o96-6N-SCZ" id="GUg-9D-IQa"/>
+                        <outlet property="quesoPicker" destination="FJh-r7-QEA" id="ZL6-F1-wy2"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="39" y="508"/>
