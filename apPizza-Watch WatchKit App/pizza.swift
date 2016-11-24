@@ -8,17 +8,20 @@
 
 import WatchKit
 
-class Pizza {
+class Pizza: NSObject {
+    var tamano: String = ""
+    var masa: String = ""
+    var queso: String = ""
+    var arrayIngredientes:[String] = []
     
-    var tamano:String?
-    var masa:String?
-    var queso:String?
-    var ingredientes:String?
+    override init(){
+        
+    }
     
-    init(tamano: String, masa: String,queso: String,ingredientes:String) {
-        self.tamano = tamano
-        self.masa = masa
-        self.queso = queso
-        self.ingredientes = ingredientes
+    init(p:Pizza){
+        tamano = p.tamano
+        masa = p.masa
+        queso = p.queso
+        arrayIngredientes = p.arrayIngredientes
     }
 }

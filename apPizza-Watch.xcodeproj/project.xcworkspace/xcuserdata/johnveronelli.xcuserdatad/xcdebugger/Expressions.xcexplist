@@ -6,7 +6,7 @@
          contextName = "APTaman&#x303;oInterfaceController.pickerSelectedItemChanged(Int) -&gt; ():APTaman&#x303;oInterfaceController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.pizza">
+               value = "pizza">
             </PersistentString>
             <PersistentString
                value = "String(tamanos[value])">
@@ -16,6 +16,9 @@
       <ContextState
          contextName = "APMasaInterfaceController.pickerSelectedItemChanged(Int) -&gt; ():APMasaInterfaceController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "pizza">
+            </PersistentString>
             <PersistentString
                value = "pizza.tamano">
             </PersistentString>

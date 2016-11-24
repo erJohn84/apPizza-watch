@@ -14,7 +14,7 @@ class APTamañoInterfaceController: WKInterfaceController {
     @IBOutlet var sizePicker: WKInterfacePicker!
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
-    var pizza = Pizza?()
+    var pizza = Pizza()
     var tamanos: [(String)] = ["Pequeña", "Mediana", "Grande"]
     
     override func awakeWithContext(context: AnyObject?) {
@@ -39,7 +39,7 @@ class APTamañoInterfaceController: WKInterfaceController {
     }
     
     @IBAction func pickerSelectedItemChanged(value: Int) {
-        pizza?.tamano = String(tamanos[value])
+        pizza.tamano = String(tamanos[value])
     }
     
     override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {

@@ -15,18 +15,18 @@ class APMasaInterfaceController: WKInterfaceController {
     @IBOutlet var masaPicker: WKInterfacePicker!
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
-    var pizza = Pizza?()
-    var masa: [(String)] = ["Delgada", "Crujiente", "Gruesa"]
+    var pizza = Pizza()
+    var masas: [(String)] = ["Delgada", "Crujiente", "Gruesa"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        pizza = context as? Pizza
+        pizza = context as! Pizza
         // Configure interface objects here.
     }
     
     override func willActivate() {
         super.willActivate()
-        let pickerItems: [WKPickerItem] = masa.map {
+        let pickerItems: [WKPickerItem] = masas.map {
             let pickerItem = WKPickerItem()
             pickerItem.title = $0
             pickerItem.caption = $0
@@ -41,14 +41,13 @@ class APMasaInterfaceController: WKInterfaceController {
     }
     
     @IBAction func pickerSelectedItemChanged(value: Int) {
-        pizza?.masa = String(masa[value])
+        pizza.masa = String(masas[value])
     }
     
     override func contextForSegueWithIdentifier(segueIdentifier: String) -> AnyObject? {
         if segueIdentifier == "masa"{
             return pizza
-        } else {
-            return nil
         }
+        return nil
     }
 }
