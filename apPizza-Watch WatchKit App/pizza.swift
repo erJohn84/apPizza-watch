@@ -6,8 +6,7 @@
 //  Copyright © 2016 John Veronelli. All rights reserved.
 //
 
-import Foundation
-import UIKit
+import WatchKit
 
 class Pizza {
     
@@ -22,17 +21,4 @@ class Pizza {
         self.queso = queso
         self.ingredientes = ingredientes
     }
-}
-
-enum masa: String {
-    case Delgada = "Delgada"
-    case Crujiente = "Crujiente"
-    case Gruesa = "Gruesa"
-}
-
-enum queso: String {
-    case Mozzarella = "Mozzarella"
-    case Cheddar = "Cheddar"
-    case Parmesano = "Parmesano"
-    case SinQueso = "Sin Queso"
 }

@@ -14,7 +14,7 @@
                         <button width="1" height="127.5" alignment="left" title="Comenzar" backgroundImage="pizza" id="8VV-i5-52B">
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="n8I-hn-aqr" kind="modal" id="XNE-W4-t9v"/>
+                                <segue destination="n8I-hn-aqr" kind="push" id="XNE-W4-t9v"/>
                             </connections>
                         </button>
                     </items>
@@ -35,7 +35,7 @@
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="Qs0-5P-N0v">
                             <connections>
-                                <segue destination="vPR-3p-fyn" kind="modal" id="c6V-Oz-1iy"/>
+                                <segue destination="vPR-3p-fyn" kind="push" identifier="tamano" id="66q-Sr-fmS"/>
                             </connections>
                         </button>
                     </items>
@@ -47,27 +47,35 @@
             </objects>
             <point key="canvasLocation" x="-466" y="508"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Masa Interface Controller-->
         <scene sceneID="6pE-SL-xH8">
             <objects>
-                <controller id="vPR-3p-fyn">
+                <controller id="vPR-3p-fyn" customClass="APMasaInterfaceController" customModule="apPizza_Watch_WatchKit_Extension">
                     <items>
                         <label width="136" alignment="left" text="Tipo de masa" minimumScaleFactor="0.0" id="pjh-um-WXH"/>
-                        <picker height="90" alignment="left" id="vbe-6X-262"/>
+                        <picker height="90" alignment="left" id="vbe-6X-262">
+                            <connections>
+                                <action selector="pickerSelectedItemChanged:" destination="vPR-3p-fyn" id="Xg2-rC-cOz"/>
+                            </connections>
+                        </picker>
                         <button width="1" alignment="left" title="Siguiente" id="nfv-Fp-91j">
                             <connections>
-                                <segue destination="T8R-QJ-acA" kind="push" id="8bb-fX-Nhx"/>
+                                <segue destination="T8R-QJ-acA" kind="push" identifier="masa" id="8bb-fX-Nhx"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="confirmButton" destination="nfv-Fp-91j" id="zQI-HP-Ww8"/>
+                        <outlet property="masaPicker" destination="vbe-6X-262" id="3xN-NB-Dcs"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-221" y="508"/>
         </scene>
-        <!--Interface Controller-->
+        <!--tamano-->
         <scene sceneID="uUH-rr-KmF">
             <objects>
-                <controller id="T8R-QJ-acA">
+                <controller identifier="tamano" id="T8R-QJ-acA">
                     <items>
                         <label width="136" alignment="left" text="Tipo de queso" minimumScaleFactor="0.0" id="MFE-lz-sGy"/>
                         <picker height="90" alignment="left" id="FJh-r7-QEA"/>

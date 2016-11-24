@@ -22,6 +22,7 @@
 		9B6403531DE45326009E6CFE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6403521DE45326009E6CFE /* ExtensionDelegate.swift */; };
 		9B6403551DE45326009E6CFE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6403541DE45326009E6CFE /* NotificationController.swift */; };
 		9B6403571DE45326009E6CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6403561DE45326009E6CFE /* Assets.xcassets */; };
+		9BA9B24E1DE6F6A900060C2F /* APMasaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA9B24D1DE6F6A900060C2F /* APMasaInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		9B6403541DE45326009E6CFE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		9B6403561DE45326009E6CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6403581DE45326009E6CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA9B24D1DE6F6A900060C2F /* APMasaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APMasaInterfaceController.swift; sourceTree = "<group>"; };
 		9BF157441DE5DAD300FF33B0 /* pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = pizza.swift; path = "apPizza-Watch WatchKit App/pizza.swift"; sourceTree = SOURCE_ROOT; };
 		9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "APTamañoInterfaceController.swift"; path = "../apPizza-Watch WatchKit App/APTamañoInterfaceController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 			children = (
 				9BF157441DE5DAD300FF33B0 /* pizza.swift */,
 				9BF157461DE5DF4100FF33B0 /* APTamañoInterfaceController.swift */,
+				9BA9B24D1DE6F6A900060C2F /* APMasaInterfaceController.swift */,
 				9B6403501DE45326009E6CFE /* InterfaceController.swift */,
 				9B6403521DE45326009E6CFE /* ExtensionDelegate.swift */,
 				9B6403541DE45326009E6CFE /* NotificationController.swift */,
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA9B24E1DE6F6A900060C2F /* APMasaInterfaceController.swift in Sources */,
 				9B6403551DE45326009E6CFE /* NotificationController.swift in Sources */,
 				9B6403531DE45326009E6CFE /* ExtensionDelegate.swift in Sources */,
 				9B1304EF1DE5F600004ABD7A /* APTamañoInterfaceController.swift in Sources */,
