@@ -16,7 +16,7 @@ class APQuesoInterfaceController: WKInterfaceController {
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
     var pizza = Pizza()
-    var quesos: [(String)] = ["mozzarela", "cheddar", "parmesano", "sin queso"]
+    var quesos: [(String)] = ["","mozzarela", "cheddar", "parmesano", "sin queso"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

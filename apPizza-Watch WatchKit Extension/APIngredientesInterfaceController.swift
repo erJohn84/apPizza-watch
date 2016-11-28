@@ -16,11 +16,12 @@ class APIngredientesInterfaceController: WKInterfaceController {
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
     var pizza = Pizza()
-    var ings: [(String)] = ["Jamon", "Pepperoni", "pimientos", "salchicha", "aceituna"]
+    var ings: [(String)] = ["Jamon", "Pepperoni", "pimientos", "salchicha", "aceituna", "cebolla"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         pizza = context as! Pizza
+        pizza.arrayIngredientes.removeAll()
         // Configure interface objects here.
     }
     

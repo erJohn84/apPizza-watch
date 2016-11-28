@@ -16,7 +16,7 @@ class APMasaInterfaceController: WKInterfaceController {
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
     var pizza = Pizza()
-    var masas: [(String)] = ["Delgada", "Crujiente", "Gruesa"]
+    var masas: [(String)] = ["","Delgada", "Crujiente", "Gruesa"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)

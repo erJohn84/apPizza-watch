@@ -11,8 +11,9 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="apPizza_Watch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Bienvenidos" id="AMm-QE-uRR"/>
-                        <button width="1" height="127.5" alignment="left" title="Comenzar" backgroundImage="pizza" id="8VV-i5-52B">
+                        <button alignment="left" title="Comenzar" backgroundImage="pizza" id="8VV-i5-52B">
                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
                             <connections>
                                 <segue destination="n8I-hn-aqr" kind="push" id="XNE-W4-t9v"/>
                             </connections>
@@ -34,6 +35,8 @@
                             </connections>
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="Qs0-5P-N0v">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.95479525860000003" green="0.74151400860000005" blue="0.070662715520000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="vPR-3p-fyn" kind="push" identifier="tamano" id="66q-Sr-fmS"/>
                             </connections>
@@ -59,6 +62,8 @@
                             </connections>
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="nfv-Fp-91j">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.95479525860000003" green="0.74151400860000005" blue="0.070662715520000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="T8R-QJ-acA" kind="push" identifier="masa" id="8bb-fX-Nhx"/>
                             </connections>
@@ -84,6 +89,8 @@
                             </connections>
                         </picker>
                         <button width="1" alignment="left" title="Siguiente" id="o96-6N-SCZ">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.95479525860000003" green="0.74151400860000005" blue="0.070662715520000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="MYx-hF-xcU" kind="push" identifier="queso" id="11x-yR-ueS"/>
                             </connections>
@@ -117,7 +124,13 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <button width="1" alignment="left" title="Siguiente" id="a6O-8J-Hcn"/>
+                        <button width="1" alignment="left" title="Siguiente" id="a6O-8J-Hcn">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.95479525860000003" green="0.74151400860000005" blue="0.070662715520000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="H1x-Js-qy5" kind="push" identifier="ingredientes" id="2jI-3E-hJs"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="confirmButton" destination="a6O-8J-Hcn" id="Pz5-v9-VYJ"/>
@@ -126,6 +139,54 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="303" y="508"/>
+        </scene>
+        <!--Resultados Interface Controller-->
+        <scene sceneID="n2u-sL-dqT">
+            <objects>
+                <controller id="H1x-Js-qy5" customClass="APResultadosInterfaceController" customModule="apPizza_Watch_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Tu pizza contiene:" id="e77-tb-hCA"/>
+                        <table alignment="left" id="K1I-ej-Sb3">
+                            <items>
+                                <tableRow identifier="res" id="8TN-ln-79C" customClass="APResultadosRow" customModule="apPizza_Watch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="vhj-DT-EB5">
+                                        <items>
+                                            <label width="136" height="42.5" alignment="left" text="Label" id="XPJ-Pw-X4Q"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="ingredientes" destination="XPJ-Pw-X4Q" id="Ox3-Cy-xXE"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Enviar al horno" id="b6u-eI-9ws">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.95479525860000003" green="0.74151400860000005" blue="0.070662715520000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="GRt-Ai-G55" kind="push" id="zjF-vg-PUN"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="confirmarButton" destination="b6u-eI-9ws" id="5mi-BV-3aZ"/>
+                        <outlet property="ingredientes" destination="K1I-ej-Sb3" id="p3V-Id-KXm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="303" y="838"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="nLP-hv-DC9">
+            <objects>
+                <controller id="GRt-Ai-G55">
+                    <items>
+                        <label width="1" alignment="left" text="Tu pizza esta en el horno" minimumScaleFactor="0.69999999999999996" id="hWH-Bx-EnW"/>
+                        <imageView alignment="left" image="pizza" id="qCx-iF-Los"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="580" y="838"/>
         </scene>
     </scenes>
 </document>

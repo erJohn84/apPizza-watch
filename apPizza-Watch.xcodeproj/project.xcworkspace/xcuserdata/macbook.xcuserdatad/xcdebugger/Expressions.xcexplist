@@ -13,5 +13,19 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "APResultadosInterfaceController.tableRefresh() -&gt; ():APResultadosInterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ingredientes.rowControllerAtIndex(index)">
+            </PersistentString>
+            <PersistentString
+               value = "pizza.arrayIngredientes.count">
+            </PersistentString>
+            <PersistentString
+               value = "ingredientes.numberOfRows">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

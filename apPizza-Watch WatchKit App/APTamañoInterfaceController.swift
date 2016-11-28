@@ -15,7 +15,7 @@ class APTamañoInterfaceController: WKInterfaceController {
     @IBOutlet weak var confirmButton: WKInterfaceButton!
     
     var pizza = Pizza()
-    var tamanos: [(String)] = ["Pequeña", "Mediana", "Grande"]
+    var tamanos: [(String)] = ["","Pequeña", "Mediana", "Grande"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
