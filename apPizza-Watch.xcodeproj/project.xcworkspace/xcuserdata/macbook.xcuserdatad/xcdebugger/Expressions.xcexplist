@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "APIngredientesInterfaceController.table(WKInterfaceTable, didSelectRowAtIndex : Int) -&gt; ():APIngredientesInterfaceController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ings[rowIndex]">
+            </PersistentString>
+            <PersistentString
+               value = "pizza.arrayIngredientes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
